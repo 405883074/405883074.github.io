@@ -24,7 +24,7 @@ URL: https://github.com/davidman/DHSmartScreenshot
 ####Problem: 离线缓存
 URL: http://www.cnblogs.com/wendingding/p/3950198.html
 
-######**AFNetworking** 为 Get 请求方式配置缓存策略
+**AFNetworking** 为 Get 请求方式配置缓存策略
 URL: https://github.com/AFNetworking/AFNetworking
 ``` 
 // 缓存策略（有缓存就用缓存，没有缓存就重新请求）    
@@ -33,7 +33,8 @@ requestSerializer.cachePolicy = NSURLRequestReturnCacheDataElseLoad;
 NSURLCache *urlCache = [NSURLCache sharedURLCache];
 [urlCache removeAllCachedResponses];
 ```
-######**YYWebImage** 图片缓存
+
+**YYWebImage** 图片缓存
 URL: https://github.com/ibireme/YYWebImage
 ``` 
 YYImageCache *cache = [YYWebImageManager sharedManager].cache;
