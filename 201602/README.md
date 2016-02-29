@@ -4,7 +4,7 @@
 URL: https://github.com/davidman/DHSmartScreenshot
 
 ####Read
-类UITraitCollection来封装水平和垂直方向的Size信息
+类**UITraitCollection**来封装水平和垂直方向的Size信息
 ```
 - (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id )coordinator {
     [super willTransitionToTraitCollection:newCollection withTransitionCoordinator:coordinator];
@@ -19,12 +19,13 @@ URL: https://github.com/davidman/DHSmartScreenshot
 }
 ```
 
-#2016年2月29日
+##2016年2月29日
 
 ####Problem: 离线缓存
-URL: https://github.com/AFNetworking/AFNetworking、https://github.com/ibireme/YYWebImage
+URL: http://www.cnblogs.com/wendingding/p/3950198.html
 
-1. AFNetworking 为 Get 请求方式配置缓存策略
+######**AFNetworking** 为 Get 请求方式配置缓存策略
+URL: https://github.com/AFNetworking/AFNetworking
 ``` 
 // 缓存策略（有缓存就用缓存，没有缓存就重新请求）    
 requestSerializer.cachePolicy = NSURLRequestReturnCacheDataElseLoad;    
@@ -32,7 +33,8 @@ requestSerializer.cachePolicy = NSURLRequestReturnCacheDataElseLoad;
 NSURLCache *urlCache = [NSURLCache sharedURLCache];
 [urlCache removeAllCachedResponses];
 ```
-2. YYWebImage 图片缓存
+######**YYWebImage** 图片缓存
+URL: https://github.com/ibireme/YYWebImage
 ``` 
 YYImageCache *cache = [YYWebImageManager sharedManager].cache;
 // 获取缓存大小
